@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sistema de Reservas Mágico 🗓️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a tu Reserva Mágica ✨</h1>
+    </header>
+
+    <main>
+        <section id="calendar-section" class="calendar-section">
+            <h2>Elige un Día Especial</h2>
+            <div id="calendar">
+                <p>Cargando calendario...</p>
+            </div>
+            <button id="showRoomsButton">Ver Salas Disponibles</button>
+            <button id="showMyReservationsButton">Ver Mis Reservas</button> 
+        </section>
+
+        <div id="messageContainer" style="
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: none; /* Oculto por defecto */
+    font-weight: bold;
+    text-align: center;
+    min-width: 300px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+">
+    <span id="messageText"></span>
+</div>
+
+   
+
+        <section class="my-reservations-section" id="my-reservations-section" style="display:none;">
+    <h2>Mis Reservas Especiales 🗓️</h2>
+    <div id="myReservationsList">
+        <p>Aún no tienes reservas. ¡Es hora de empezar!</p>
+    </div>
+    <button id="backToCalendarFromMyReservations">Volver al Calendario</button>
+</section>
+<section id="rooms-section" class="rooms-section" style="display: none;"> 
+    <h2>Salas Disponibles</h2>
+    <div id="roomsList"></div> <button id="goBackButton">Volver al Calendario</button>
+</section>
+    </main>
+
+    <footer>
+        <p>Hecho con magia y esfuerzo ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

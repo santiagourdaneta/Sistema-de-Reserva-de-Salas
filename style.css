@@ -1,0 +1,205 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Un tipo de letra amigable */
+    background-color: #e0f7fa; /* Un azul claro como el cielo */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #80cbc4; /* Un verde agua bonito */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #fff; /* Letras blancas */
+    font-size: 2.5em; /* Letras muy grandes */
+}
+
+h2 {
+    color: #00796b; /* Un verde más oscuro */
+    font-size: 1.8em; /* Letras grandes */
+}
+
+button {
+    background-color: #ffb74d; /* Un naranja brillante */
+    color: white;
+    padding: 15px 30px; /* Botones grandes */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em; /* Texto grande en el botón */
+    cursor: pointer; /* Para que el ratón se vuelva una manita */
+    margin: 10px;
+    transition: background-color 0.3s ease; /* Efecto suave al tocar */
+}
+
+button:hover {
+    background-color: #ff8a65; /* Un naranja un poco más oscuro al pasar el ratón */
+}
+
+#calendar {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px; /* Para que no sea demasiado ancho */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Una pequeña sombra para que se vea bonito */
+}
+
+.rooms-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#roomList p {
+    background-color: #ffe0b2; /* Un naranja claro para las salas */
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.room-item {
+    display: flex; /* Para que la información se ponga en línea */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alineados al centro */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+.room-item button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #80cbc4;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* Estilos para el Calendario */
+.month-year-header {
+    display: flex; /* Para que los botones y el texto estén en línea */
+    justify-content: space-between; /* Para que se separen bien */
+    align-items: center; /* Alineados al centro */
+    margin-bottom: 15px;
+    font-size: 1.5em; /* Tamaño de letra grande para el mes y año */
+    color: #004d40; /* Un verde oscuro */
+}
+
+.month-year-header .nav-button {
+    background-color: #64dd17; /* Un verde vibrante */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em; /* Letra grande en los botones de navegación */
+}
+
+.month-year-header .nav-button:hover {
+    background-color: #76ff03; /* Un verde más claro al pasar el ratón */
+}
+
+.days-grid {
+    display: grid; /* ¡Esta es la magia! Hace que se ponga en cuadrícula */
+    grid-template-columns: repeat(7, 1fr); /* 7 columnas, una para cada día de la semana */
+    gap: 5px; /* Pequeño espacio entre los días */
+}
+
+.day-name {
+    background-color: #a7ffeb; /* Fondo claro para los nombres de los días */
+    padding: 10px 5px;
+    font-weight: bold; /* Letra más gordita */
+    color: #004d40;
+    border-radius: 5px;
+}
+
+.day {
+    background-color: #e0f2f7; /* Fondo para los días */
+    padding: 15px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 1.1em; /* Letra grande para los números del día */
+    color: #333;
+}
+
+.day:hover {
+    background-color: #b2ebf2; /* Color al pasar el ratón */
+}
+
+.day.empty {
+    background-color: transparent; /* Días vacíos sin color */
+    cursor: default; /* El ratón no se vuelve manita */
+}
+
+.day.selected {
+    background-color: #ff8a65; /* Naranja para el día seleccionado */
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.day.today {
+    border: 2px solid #ff5722; /* Borde naranja para el día de hoy */
+    font-weight: bold;
+}
+
+/* Estilos para Mis Reservas */
+.my-reservations-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.my-reservation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e3f2fd; /* Un azul muy claro */
+    border: 1px solid #bbdefb;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+.my-reservation-item button {
+    background-color: #ef5350; /* Un rojo para cancelar */
+    color: white;
+    padding: 8px 15px;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.my-reservation-item button:hover {
+    background-color: #d32f2f; /* Un rojo más oscuro al pasar el ratón */
+}
+
+/* En tu style.css */
+.calendar-section, .rooms-section, .my-reservations-section {
+    /* Estilos generales */
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 800px;
+    background-color: #f9f9f9;
+}
+/* Pero no algo como: .rooms-section { display: block; } */
